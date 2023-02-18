@@ -1,0 +1,51 @@
+body {
+  background-image: url(https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: antiquewhite;
+  font-size: large;
+}
+
+form {
+  margin: 0 auto;
+  padding: 0.8%;
+  width: 40%;
+  background-color: rgba(1, 128, 1, 0.808);
+  border-radius: 2%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+}
+
+#title,
+#description {
+  text-align: center;
+  color: #00ff73;
+  background: rgba(75, 23, 23, 0.623);
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 40%;
+  padding: 3px;
+}
+
+button {
+  background-color: rgba(58, 209, 151, 0.589);
+  width: 100%;
+  color: antiquewhite;
+  padding: 5px;
+  margin: 0 auto;
+  border: solid 1px;
+  font-size: large;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  font-size: large;
+  padding: 5px;
+}

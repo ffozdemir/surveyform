@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Who wants to be a Web Developer?</h1>
+    <p id="description">You can fill this form, if you want to be a Web Developer.</p>
+    <form id="survey-form" action="" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </fieldset>
+        <fieldset>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </fieldset>
+        <fieldset>
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="number" id="number" placeholder="Age" min="10" max="99" required>
+        </fieldset>
+        <fieldset>
+            <label id="dropdown-label" for="dropdown">What is your educational status?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="prmry">Primary school</option>
+                <option value="scndry">Secondary school</option>
+                <option value="vctnl">Vocational school</option>
+                <option value="bchlr">Bachelor Degree</option>
+                <option value="mstr">Master Degree</option>
+                <option value="noanswr">I don't want to answer</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>What type of Web Developer do you want to be?</p>
+            <label for="frntnd"> <input type="radio" value="frntnd" name="developer-type" id="frntnd"
+                    class="input-radio">
+                Front-end Developer
+            </label>
+            <label for="bcknd"> <input type="radio" value="bcknd" name="developer-type" id="bcknd" class="input-radio">
+                Back-end Developer
+            </label>
+            <label for="fllstck"> <input type="radio" value="fllstck" name="developer-type" id="fllstck"
+                    class="input-radio">
+                Full-stack Developer
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Which platforms for learning web development did you hear about before?</p>
+            <label for="freecodecamp"><input type="checkbox" value="freecodecamp" name="platforms"
+                    id="freecodecamp">Freecodecamp</label>
+            <label for="scrimba"><input type="checkbox" value="scrimba" name="platforms" id="scrimba">Scrimba</label>
+            <label for="patikadev"><input type="checkbox" value="patikadev" name="platforms"
+                    id="patikadev">Patika.dev</label>
+            <label for="codeacademy"><input type="checkbox" value="codeacademy" name="platforms"
+                    id="codeacademy">Codeacademy</label>
+            <label for="udemy"><input type="checkbox" value="udemy" name="platforms" id="udemy">Udemy</label>
+        </fieldset>
+        <fieldset>
+            <p>Enter your desires about web developing</p>
+            <textarea name="text-area" id="text-area" placeholder="I love to coding..." rows="8"></textarea>
+        </fieldset>
+        <fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
