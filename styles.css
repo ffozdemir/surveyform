@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: url(https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center;
@@ -8,9 +12,9 @@ body {
 }
 
 form {
-  margin: 0 auto;
-  padding: 0.8%;
-  width: 40%;
+  margin: 10px auto;
+  padding: 1.5rem;
+  width: 500px;
   background-color: rgba(1, 128, 1, 0.808);
   border-radius: 2%;
 }
@@ -18,7 +22,7 @@ form {
 fieldset {
   display: flex;
   flex-direction: column;
-  border: 0;
+  border: none;
 }
 
 #title,
@@ -48,4 +52,13 @@ textarea {
   margin-top: 5px;
   font-size: large;
   padding: 5px;
+}
+
+input[type="checkbox"] {
+  margin: 7px 0;
+  margin-right: 0.6rem;
+}
+
+.input-radio {
+  margin-right: 0.2rem;
 }
